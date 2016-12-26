@@ -1,0 +1,6 @@
+usage: dsstore
+
+options
+  --version, -v Output version
+  --help, -h Output help
+  --verbose Output paths of removed .DS_Store

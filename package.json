@@ -1,0 +1,44 @@
+{
+  "name": "dsstore",
+  "version": "0.0.0",
+  "description": "Remove .DS_Store recursively",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --serial"
+  },
+  "bin": {
+    "dsstore": "cli.js"
+  },
+  "repository": "1000ch/dsstore",
+  "files": [
+    "index.js",
+    "cli.js",
+    "usage.txt"
+  ],
+  "keywords": [
+    "dsstore"
+  ],
+  "author": {
+    "name": "1000ch",
+    "email": "shogo.sensui@gmail.com",
+    "web": "https://github.com/1000ch"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1000ch/dsstore/issues"
+  },
+  "homepage": "https://github.com/1000ch/dsstore#readme",
+  "dependencies": {
+    "arrify": "^1.0.1",
+    "globby": "^6.1.0",
+    "minimist": "^1.2.0",
+    "rmfr": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "mkdirp": "^0.5.1",
+    "pify": "^2.3.0",
+    "rimraf": "^2.5.4",
+    "touch": "^1.0.0"
+  }
+}
