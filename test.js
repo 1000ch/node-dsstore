@@ -4,7 +4,7 @@ const mkdirp = pify(require('mkdirp'));
 const rimraf = pify(require('rimraf'));
 const touch = pify(require('touch'));
 const globby = require('globby');
-const dsstore = require('../');
+const dsstore = require('./');
 const fixtures = `${__dirname}/fixtures`;
 const dsstores = `${fixtures}/**/.DS_Store`;
 
@@ -66,4 +66,3 @@ test('Remove files from specified folders', async t => {
   const after = await globby(dsstores);
   t.is(after.length, 1);
 });
-

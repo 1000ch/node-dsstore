@@ -1,6 +1,13 @@
-usage: dsstore
+Usage
+  $ dsstore [<path|glob> ...]
 
-options
+Options
   --version, -v Output version
   --help, -h Output help
-  --verbose Output paths of removed .DS_Store
+  --silent Hide output paths of removed .DS_Store
+
+Examples
+  $ dsstore
+  $ dsstore path/to/folder
+  $ dsstore foo bar
+  $ dsstore --silent

@@ -2,11 +2,14 @@
 
 const fs = require('fs');
 const path = require('path');
+const minimist = require('minimist');
 const dsstore = require('./');
-const argv = require('minimist')(process.argv.slice(2), {
+
+const argv = minimist(process.argv.slice(2), {
   alias: {
     v: 'version',
-    h: 'help'
+    h: 'help',
+    s: 'silent'
   }
 });
 
@@ -25,5 +28,5 @@ if (argv.h || argv.help) {
 const cwd = process.cwd();
 const args = argv._.length ? argv._.map(arg => path.resolve(cwd, arg)) : [cwd];
 
-dsstore(args, argv.verbose)
+dsstore(args, argv.s || argv.silent)
   .catch(error => console.error(error));

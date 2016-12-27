@@ -31,6 +31,7 @@
   "dependencies": {
     "arrify": "^1.0.1",
     "globby": "^6.1.0",
+    "log-symbols": "^1.0.2",
     "minimist": "^1.2.0",
     "rmfr": "^1.0.1"
   },
