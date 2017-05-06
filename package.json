@@ -9,7 +9,7 @@
   "bin": {
     "dsstore": "cli.js"
   },
-  "repository": "1000ch/dsstore",
+  "repository": "1000ch/node-dsstore",
   "files": [
     "index.js",
     "cli.js",
@@ -25,9 +25,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1000ch/dsstore/issues"
+    "url": "https://github.com/1000ch/node-dsstore/issues"
   },
-  "homepage": "https://github.com/1000ch/dsstore#readme",
+  "homepage": "https://github.com/1000ch/node-dsstore#readme",
   "dependencies": {
     "arrify": "^1.0.1",
     "globby": "^6.1.0",

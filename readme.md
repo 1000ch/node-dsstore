@@ -2,9 +2,9 @@
 
 Remove `.DS_Store` recursively.
 
-[![Build Status](https://travis-ci.org/1000ch/dsstore.svg?branch=master)](https://travis-ci.org/1000ch/dsstore)
-[![Dependency Status](https://david-dm.org/1000ch/dsstore.svg)](https://david-dm.org/1000ch/dsstore)
-[![devDependency Status](https://david-dm.org/1000ch/dsstore/dev-status.svg)](https://david-dm.org/1000ch/dsstore?type=dev)
+[![Build Status](https://travis-ci.org/1000ch/node-dsstore.svg?branch=master)](https://travis-ci.org/1000ch/node-dsstore)
+[![Dependency Status](https://david-dm.org/1000ch/node-dsstore.svg)](https://david-dm.org/1000ch/node-dsstore)
+[![devDependency Status](https://david-dm.org/1000ch/node-dsstore/dev-status.svg)](https://david-dm.org/1000ch/node-dsstore?type=dev)
 
 ## Install
 
