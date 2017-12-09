@@ -30,13 +30,13 @@
   "homepage": "https://github.com/1000ch/node-dsstore#readme",
   "dependencies": {
     "arrify": "^1.0.1",
-    "globby": "^6.1.0",
+    "globby": "^7.1.1",
     "log-symbols": "^2.1.0",
     "minimist": "^1.2.0",
     "rmfr": "^1.0.1"
   },
   "devDependencies": {
-    "ava": "^0.23.0",
+    "ava": "^0.24.0",
     "mkdirp": "^0.5.1",
     "pify": "^3.0.0",
     "rimraf": "^2.5.4",
