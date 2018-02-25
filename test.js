@@ -1,7 +1,7 @@
 const test = require('ava');
 const pify = require('pify');
 const mkdirp = pify(require('mkdirp'));
-const rimraf = pify(require('rimraf'));
+const rmfr = require('rmfr');
 const touch = pify(require('touch'));
 const globby = require('globby');
 const dsstore = require('./');
@@ -13,7 +13,7 @@ test.before(async t => {
 });
 
 test.after(async t => {
-  await rimraf(`${__dirname}/fixtures`);
+  await rmfr(`${__dirname}/fixtures`);
 });
 
 test.beforeEach(async t => {
