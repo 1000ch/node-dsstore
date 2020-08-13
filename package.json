@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.4",
     "pify": "^3.0.0",
     "touch": "^3.1.0"
   }
