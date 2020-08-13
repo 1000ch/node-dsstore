@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/1000ch/node-dsstore#readme",
   "dependencies": {
-    "arrify": "^1.0.1",
+    "arrify": "^2.0.1",
     "globby": "^8.0.1",
     "log-symbols": "^2.2.0",
     "minimist": "^1.2.0",
