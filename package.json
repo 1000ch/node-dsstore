@@ -33,7 +33,7 @@
     "globby": "^8.0.1",
     "log-symbols": "^2.2.0",
     "minimist": "^1.2.0",
-    "rmfr": "^1.0.8"
+    "rmfr": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",
