@@ -6,12 +6,12 @@ module.exports = (args, callback) => {
   const dsstores = arrify(args).map(arg => `${arg}/**/.DS_Store`);
 
   return globby(dsstores).then(paths => {
-    return Promise.all(paths.map(path => {
+    paths.forEach(async path => {
       if (callback) {
         callback(path);
       }
 
-      return rmfr(path);
-    }));
+      await rmfr(path);
+    });
   });
 };
