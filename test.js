@@ -1,10 +1,10 @@
 const test = require('ava');
-const pify = require('pify');
-const mkdirp = pify(require('mkdirp'));
+const {promisify} = require('util');
+const mkdirp = require('mkdirp');
 const rmfr = require('rmfr');
-const touch = pify(require('touch'));
+const touch = promisify(require('touch'));
 const globby = require('globby');
-const dsstore = require('./');
+const dsstore = require('.');
 const fixtures = `${__dirname}/fixtures`;
 const dsstores = `${fixtures}/**/.DS_Store`;
 

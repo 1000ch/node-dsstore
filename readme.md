@@ -1,38 +1,14 @@
-# dsstore
+# dsstore [![Build Status](https://travis-ci.org/1000ch/node-dsstore.svg?branch=master)](https://travis-ci.org/1000ch/node-dsstore)
 
 Remove `.DS_Store` recursively.
-
-[![Build Status](https://travis-ci.org/1000ch/node-dsstore.svg?branch=master)](https://travis-ci.org/1000ch/node-dsstore)
-[![Dependency Status](https://david-dm.org/1000ch/node-dsstore.svg)](https://david-dm.org/1000ch/node-dsstore)
-[![devDependency Status](https://david-dm.org/1000ch/node-dsstore/dev-status.svg)](https://david-dm.org/1000ch/node-dsstore?type=dev)
 
 ## Install
 
 ```bash
-$ npm i -g dsstore
+$ npm install -g dsstore
 ```
 
 ## Usage
-
-From CLI.
-
-```bash
-Usage
-  $ dsstore [<path|glob> ...]
-
-Options
-  --version, -v Output version
-  --help, -h Output help
-  --silent Hide output paths of removed .DS_Store
-
-Examples
-  $ dsstore
-  $ dsstore path/to/folder
-  $ dsstore foo bar
-  $ dsstore --silent
-```
-
-In JavaScript.
 
 ```javascript
 const dsstore = require('dsstore');
