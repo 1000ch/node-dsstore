@@ -1,4 +1,4 @@
-# dsstore [![Build Status](https://travis-ci.org/1000ch/node-dsstore.svg?branch=master)](https://travis-ci.org/1000ch/node-dsstore)
+# dsstore ![GitHub Actions Status](https://github.com/1000ch/node-dsstore/workflows/test/badge.svg?branch=master)
 
 Remove `.DS_Store` recursively.
 
