@@ -2,36 +2,37 @@
   "name": "dsstore",
   "version": "1.0.1",
   "description": "Remove .DS_Store recursively",
-  "main": "index.js",
-  "scripts": {
-    "test": "ava --serial"
-  },
-  "repository": "1000ch/node-dsstore",
-  "files": [
-    "index.js"
-  ],
   "keywords": [
     "dsstore"
   ],
+  "homepage": "https://github.com/1000ch/node-dsstore#readme",
+  "bugs": {
+    "url": "https://github.com/1000ch/node-dsstore/issues"
+  },
+  "repository": "1000ch/node-dsstore",
+  "license": "MIT",
   "author": {
     "name": "Shogo Sensui",
     "email": "shogosensui@gmail.com",
     "web": "https://github.com/1000ch"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/1000ch/node-dsstore/issues"
+  "type": "module",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "xo && ava --serial"
   },
-  "homepage": "https://github.com/1000ch/node-dsstore#readme",
+  "xo": {
+    "space": 2
+  },
   "dependencies": {
-    "arrify": "^2.0.1",
-    "globby": "^11.0.1",
-    "rmfr": "^2.0.0"
+    "globby": "^11.0.3"
   },
   "devDependencies": {
-    "ava": "^3.11.0",
-    "mkdirp": "^1.0.4",
-    "touch": "^3.1.0"
+    "ava": "^3.15.0",
+    "touch": "^3.1.0",
+    "xo": "^0.39.1"
   },
   "engines": {
     "node": ">=12"

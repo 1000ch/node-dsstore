@@ -1,17 +1,18 @@
-const rmfr = require('rmfr');
-const arrify = require('arrify');
-const globby = require('globby');
+import fs from 'fs/promises';
+import path from 'path';
+import globby from 'globby';
 
-module.exports = (args, callback) => {
-  const dsstores = arrify(args).map(arg => `${arg}/**/.DS_Store`);
+const dsstore = async (args, callback) => {
+  const dsstores = args.map(arg => path.join(arg, '**', '.DS_Store'));
+  const paths = await globby(dsstores);
 
-  return globby(dsstores).then(paths => {
-    paths.forEach(async path => {
-      if (callback) {
-        callback(path);
-      }
+  await Promise.all(paths.map(path => {
+    if (callback) {
+      callback(path);
+    }
 
-      await rmfr(path);
-    });
-  });
+    return fs.rm(path);
+  }));
 };
+
+export default dsstore;

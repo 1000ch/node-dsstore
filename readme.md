@@ -11,8 +11,9 @@ $ npm install -g dsstore
 ## Usage
 
 ```javascript
-const dsstore = require('dsstore');
-dsstore('foo');
+import dsstore from 'dsstore';
+
+dsstore(['foo']);
 dsstore(['bar', 'baz']);
 ```
 
