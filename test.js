@@ -1,6 +1,6 @@
-import fs from 'fs/promises';
-import path from 'path';
-import {promisify} from 'util';
+import fs from 'node:fs';
+import path from 'node:path';
+import {promisify} from 'node:util';
 import test from 'ava';
 import globby from 'globby';
 import touch from 'touch';
@@ -10,14 +10,14 @@ const touchP = promisify(touch);
 const fixtures = new URL('fixtures', import.meta.url).pathname;
 const dsstores = path.join(fixtures, '**', '.DS_Store');
 
-test.before(async () => {
-  await fs.mkdir(path.join(fixtures, 'foo', 'bar'), {
+test.before(() => {
+  fs.mkdirSync(path.join(fixtures, 'foo', 'bar'), {
     recursive: true
   });
 });
 
-test.after(async () => {
-  await fs.rm(fixtures, {
+test.after(() => {
+  fs.rmSync(fixtures, {
     recursive: true,
     force: true
   });
@@ -75,4 +75,13 @@ test('Remove files from specified folders', async t => {
   ]);
   const after = await globby(dsstores);
   t.is(after.length, 1);
+});
+
+test('Return true if no folder found', async t => {
+  const before = await globby(dsstores);
+  t.is(before.length, 3);
+
+  await dsstore([]);
+  const after = await globby(dsstores);
+  t.is(after.length, 3);
 });
