@@ -17,6 +17,10 @@ dsstore(['foo']);
 dsstore(['bar', 'baz']);
 ```
 
+### `dsstore(folders: string[])`
+
+Remove `.DS_Store` under specified folders.
+
 ## License
 
 [MIT](https://1000ch.mit-license.org) © [Shogo Sensui](https://github.com/1000ch)
