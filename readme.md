@@ -1,4 +1,4 @@
-# dsstore ![GitHub Actions Status](https://github.com/1000ch/node-dsstore/workflows/test/badge.svg?branch=main)
+# dsstore ![GitHub Actions Status](https://github.com/1000ch/node-dsstore/actions/workflows/test.yml/badge.svg)
 
 Remove `.DS_Store` recursively.
 
